@@ -46,11 +46,11 @@ class AddPediatricianViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        self.appData.mama.bebBabies[0].strNombrePediatra = tfPediatra.text!
-        self.appData.mama.bebBabies[0].strTelefono = tfPediatra_tel.text!
-        self.appData.mama.bebBabies[0].strCelular = tfPediatra_cel.text!
-        self.appData.mama.bebBabies[0].strUbicacion = tfPediatra_cel.text!
+        let count = appData.mama.bebBabies.count - 1
+        self.appData.mama.bebBabies[count].strNombrePediatra = tfPediatra.text!
+        self.appData.mama.bebBabies[count].strTelefono = tfPediatra_tel.text!
+        self.appData.mama.bebBabies[count].strCelular = tfPediatra_cel.text!
+        self.appData.mama.bebBabies[count].strUbicacion = tfPediatra_cel.text!
         
         let nav = segue.destinationViewController as! UINavigationController
         let home = nav.topViewController as! HomeViewController
