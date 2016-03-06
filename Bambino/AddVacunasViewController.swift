@@ -34,13 +34,13 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return appData.mama.bebBabies[0].arrVacunas.count
+        return appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
     
-    cell.textLabel?.text = (appData.mama.bebBabies[0].arrVacunas[indexPath.row].strVacuna)
+    cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].strVacuna)
     
     return cell
     }
@@ -50,12 +50,12 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
             if cell.accessoryType == .Checkmark
             {
                 cell.accessoryType = .None
-                appData.mama.bebBabies[0].arrVacunas[indexPath.row].boolStatus = false
+                appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus = false
             }
             else
             {
                 cell.accessoryType = .Checkmark
-                appData.mama.bebBabies[0].arrVacunas[indexPath.row].boolStatus = true
+                appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus = true
             }
         }
     }
@@ -69,6 +69,6 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
         
         let view = segue.destinationViewController as! AddPediatricianViewController
         view.appData = self.appData
-        view.index = 0
+        view.index = appData.mama.bebBabies.count - 1
     }
 }
