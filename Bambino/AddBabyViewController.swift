@@ -15,6 +15,7 @@ class AddBabyViewController: UIViewController {
     @IBOutlet weak var dpFecha: UIDatePicker!
     @IBOutlet weak var tfPeso: UITextField!
     @IBOutlet weak var tfTalla: UITextField!
+    @IBOutlet weak var tfSexo: UITextField!
     
     var appData: ApplicationData!
     

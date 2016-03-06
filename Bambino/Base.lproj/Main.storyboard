@@ -376,6 +376,7 @@
                         <outlet property="dpFecha" destination="VSc-pX-YfA" id="0b3-YF-aNf"/>
                         <outlet property="tfNombre" destination="H7B-uv-DUl" id="USo-tH-koA"/>
                         <outlet property="tfPeso" destination="C6g-9t-UYn" id="Axk-00-WQT"/>
+                        <outlet property="tfSexo" destination="nuR-Xa-ecx" id="AtW-uS-6i1"/>
                         <outlet property="tfTalla" destination="znF-9w-sPS" id="E3h-Mv-1vZ"/>
                     </connections>
                 </viewController>
