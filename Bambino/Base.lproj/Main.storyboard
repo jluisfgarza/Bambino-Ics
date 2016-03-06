@@ -747,7 +747,7 @@
                         <barButtonItem image="icon-tips" width="70" id="vy7-tA-xS2">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="vdG-E9-Lp9" kind="show" id="4Y9-ar-R62"/>
+                                <segue destination="vdG-E9-Lp9" kind="show" identifier="segueTips" id="4Y9-ar-R62"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -755,7 +755,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Bebé +" id="hhz-2a-aDY">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="dqh-2x-8Zw" kind="show" id="JLF-P8-qB3"/>
+                                <segue destination="dqh-2x-8Zw" kind="show" identifier="segueAddBaby" id="JLF-P8-qB3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -957,6 +957,6 @@
         <segue reference="tLk-JC-t2y"/>
         <segue reference="DTT-n6-4qc"/>
         <segue reference="JLF-P8-qB3"/>
-        <segue reference="9Nk-6a-Zym"/>
+        <segue reference="kh4-0O-QbW"/>
     </inferredMetricsTieBreakers>
 </document>
