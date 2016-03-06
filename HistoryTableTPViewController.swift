@@ -9,6 +9,22 @@
 import UIKit
 
 class HistoryTableTPViewController: UIViewController {
+    
+    @IBOutlet weak var tfPesoActual: UITextField!
+    @IBOutlet weak var tfTallaActual: UITextField!
+    
+    
+    @IBOutlet weak var lbDesnutrido: UILabel!
+    @IBOutlet weak var lbNormal: UILabel!
+    @IBOutlet weak var lbSobrepeso: UILabel!
+    @IBOutlet weak var lbObeso: UILabel!
+    @IBOutlet weak var lbEstadoPeso: UILabel!
+    
+    
+    @IBOutlet weak var lbBajo: UILabel!
+    @IBOutlet weak var lbNormalEst: UILabel!
+    @IBOutlet weak var lbEstadoTalla: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
