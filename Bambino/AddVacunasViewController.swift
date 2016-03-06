@@ -40,7 +40,7 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
     
-    cell.textLabel?.text = appData.mama.bebBabies[0].arrVacunas[indexPath.row].strVacuna
+    cell.textLabel?.text = (appData.mama.bebBabies[0].arrVacunas[indexPath.row].strVacuna)
     
     return cell
     }

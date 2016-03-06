@@ -23,14 +23,14 @@ class Bebe: NSObject {
     var pesoTalla: PesoTalla
     
     override init() {
-        self.strNombre = "Bebe"
+        self.strNombre = "Luisito"
         self.fechaNacimiento = NSDate()
         self.douPeso = 3
         self.douTalla = 50
-        self.strNombrePediatra = "Pediatra"
+        self.strNombrePediatra = "Cesar Saldaña"
         self.strTelefono = "12345678"
         self.strCelular = "98765432"
-        self.strUbicacion = "Dirección del doctor"
+        self.strUbicacion = "IMSS #25"
         self.arrConsulta = []
         self.arrVacunas = []
         self.arrEventoProximo = []
@@ -42,8 +42,8 @@ class Bebe: NSObject {
         for dict in nsarrayVacunas! {
             let vacuna = Vacuna()
             vacuna.fecha = (dict.objectForKey("Fecha")?.integerValue)!
-            vacuna.strVacuna = String(dict.objectForKey("Vacuna"))
-            vacuna.strEnfermedad = String(dict.objectForKey("Enfermedad"))
+            vacuna.strVacuna = String(dict.objectForKey("Vacuna")!)
+            vacuna.strEnfermedad = String(dict.objectForKey("Enfermedad")!)
             
             self.arrVacunas.append(vacuna)
         }
