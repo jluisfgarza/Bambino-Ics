@@ -102,7 +102,7 @@ class SelectKidTableViewController: UITableViewController {
             view.appData = self.appData
             view.index = self.tableView.indexPathForSelectedRow?.row
         }
-        if segue.identifier == "segueHistorial" {
+        else if segue.identifier == "segueHistorial" {
             let view = segue.destinationViewController as! SeeHistoryTableViewController
             view.appData = self.appData
             view.index = self.tableView.indexPathForSelectedRow?.row

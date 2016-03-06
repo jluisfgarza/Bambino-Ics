@@ -25,6 +25,10 @@ class HistoryTableTPViewController: UIViewController {
     @IBOutlet weak var lbNormalEst: UILabel!
     @IBOutlet weak var lbEstadoTalla: UILabel!
     
+    var arrDatos: NSArray!
+    var appData: ApplicationData!
+    var index: Int!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +39,54 @@ class HistoryTableTPViewController: UIViewController {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         self.navigationController!.navigationBar.barTintColor = UIColor(red: 72.0/255.0, green: 190.0/255.0, blue: 176.0/255.0, alpha: 1.0)
         // Do any additional setup after loading the view.
+        
+        let path = NSBundle.mainBundle().pathForResource("PesoTalla", ofType: "plist")
+        self.arrDatos = NSArray(contentsOfFile: path!)
+        
+        var months = NSCalendar.currentCalendar().components(.Month, fromDate: self.appData.mama.bebBabies[index].fechaNacimiento, toDate: NSDate(), options: []).month
+        
+        if self.appData.mama.bebBabies[index].strSexo == "Niño" {
+            
+            var dicHombre = self.arrDatos[1] as! NSDictionary
+            if months <= 12 {
+                dicHombre = dicHombre.valueForKey(String(months)) as! NSDictionary
+            }
+            else {
+                months = months - months % 6
+                dicHombre = dicHombre.valueForKey(String(months)) as! NSDictionary
+            }
+            
+            self.lbDesnutrido.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Desnutricion")?.doubleValue)!)
+            self.lbNormal.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Normal")?.doubleValue)!)
+            self.lbSobrepeso.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Sobrepeso")?.doubleValue)!)
+            self.lbObeso.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Obesidad")?.doubleValue)!)
+            self.lbEstadoPeso.text = ""
+            
+            self.lbBajo.text = String((dicHombre.valueForKey("Talla")?.valueForKey("Baja")?.doubleValue)!)
+            self.lbNormalEst.text = String((dicHombre.valueForKey("Talla")?.valueForKey("Normal")?.doubleValue)!)
+            self.lbEstadoTalla.text = ""
+            
+        }
+        else {
+            var dicHombre = self.arrDatos[0] as! NSDictionary
+            if months <= 12 {
+                dicHombre = dicHombre.valueForKey(String(months)) as! NSDictionary
+            }
+            else {
+                months = months - months % 6
+                dicHombre = dicHombre.valueForKey(String(months)) as! NSDictionary
+            }
+            
+            self.lbDesnutrido.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Desnutricion")?.doubleValue)!)
+            self.lbNormal.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Normal")?.doubleValue)!)
+            self.lbSobrepeso.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Sobrepeso")?.doubleValue)!)
+            self.lbObeso.text = String((dicHombre.valueForKey("Peso")?.valueForKey("Obesidad")?.doubleValue)!)
+            self.lbEstadoPeso.text = ""
+            
+            self.lbBajo.text = String((dicHombre.valueForKey("Talla")?.valueForKey("Baja")?.doubleValue)!)
+            self.lbNormalEst.text = String((dicHombre.valueForKey("Talla")?.valueForKey("Normal")?.doubleValue)!)
+            self.lbEstadoTalla.text = ""
+        }
     }
 
     override func didReceiveMemoryWarning() {

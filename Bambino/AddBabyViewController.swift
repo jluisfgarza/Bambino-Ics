@@ -78,7 +78,7 @@ class AddBabyViewController: UIViewController {
         let talla = Double(tfTalla.text!)!
         let date = self.dpFecha.date
         
-        let baby = Bebe(nombre: self.tfNombre.text!, fechaNacimiento: date, peso: peso, talla: talla)
+        let baby = Bebe(nombre: self.tfNombre.text!, fechaNacimiento: date, peso: peso, talla: talla, sexo: "Niño")
         
         self.appData.mama.bebBabies.append(baby)
         

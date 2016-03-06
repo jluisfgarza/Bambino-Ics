@@ -92,8 +92,10 @@ class SeeHistoryTableViewController: UITableViewController {
         else if segue.identifier == "segueHistorialCitas" {
             
         }
-        else if segue.identifier == "segueHistorialTablapt" {
-            
+        else if segue.identifier == "segueTablePT" {
+            let view = segue.destinationViewController as! HistoryTableTPViewController
+            view.appData = self.appData
+            view.index = self.index
         }
     }
 }

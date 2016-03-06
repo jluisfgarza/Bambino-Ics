@@ -21,6 +21,7 @@ class Bebe: NSObject {
     var arrVacunas: [Vacuna]
     var arrEventoProximo: [EventoProximo]
     var pesoTalla: PesoTalla
+    var strSexo: String
     
     override init() {
         self.strNombre = "Luisito"
@@ -35,6 +36,7 @@ class Bebe: NSObject {
         self.arrVacunas = []
         self.arrEventoProximo = []
         self.pesoTalla = PesoTalla()
+        self.strSexo = "Niño"
         
         let path = NSBundle.mainBundle().pathForResource("Vacunas", ofType: "plist")
         let nsarrayVacunas = NSArray(contentsOfFile: path!)
@@ -49,11 +51,12 @@ class Bebe: NSObject {
         }
     }
     
-    init(nombre: String, fechaNacimiento: NSDate, peso: Double, talla: Double) {
+    init(nombre: String, fechaNacimiento: NSDate, peso: Double, talla: Double, sexo: String) {
         self.strNombre = nombre
         self.fechaNacimiento = fechaNacimiento
         self.douPeso = peso
         self.douTalla = peso
+        self.strSexo = sexo
         self.strNombrePediatra = ""
         self.strTelefono = ""
         self.strCelular = ""
