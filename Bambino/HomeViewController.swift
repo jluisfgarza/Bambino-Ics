@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var lbUsuario: UILabel!
     
     var appData: ApplicationData!
+    var arrMostrar: [Vacuna] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.lbUsuario.text = "Hola \(self.appData.mama.strNombre)"
         
+        var icont = 0
+        var index = 0
+        
+        while index < self.appData.mama.bebBabies[0].arrVacunas.count && icont < 3 {
+            if !self.appData.mama.bebBabies[0].arrVacunas[index].boolStatus {
+                icont++
+                arrMostrar.append(self.appData.mama.bebBabies[0].arrVacunas[index])
+            }
+        }
+        
         //let months = NSCalendar.currentCalendar().components(.Month, fromDate: self.appData.mama.bebBabies[appData.mama.bebBabies.count - 1].fechaNacimiento, toDate: NSDate(), options: []).month
         
     }
@@ -42,7 +53,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
