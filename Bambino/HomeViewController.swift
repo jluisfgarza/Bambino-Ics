@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var lbUsuario: UILabel!
     
@@ -30,8 +30,28 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.lbUsuario.text = "Hola \(self.appData.mama.strNombre)"
+        
+        //let months = NSCalendar.currentCalendar().components(.Month, fromDate: self.appData.mama.bebBabies[appData.mama.bebBabies.count - 1].fechaNacimiento, toDate: NSDate(), options: []).month
+        
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+    
+    // Configure the cell...
+    
+    return cell
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
