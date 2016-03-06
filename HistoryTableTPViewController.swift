@@ -31,6 +31,28 @@ class HistoryTableTPViewController: UIViewController {
     
     @IBAction func btCalcular(sender: AnyObject) {
         
+        let pesoActual = tfPesoActual.text!
+        let tallaActual = tfTallaActual.text!
+        
+        if pesoActual < lbDesnutrido.text {
+            self.lbEstadoPeso.text = "Tu hijo está en la categoría de: Desnutrido"
+        }
+        else if pesoActual > lbObeso.text {
+            self.lbEstadoPeso.text = "Tu hijo está en la categoría de: Obesidad"
+        }
+        else if pesoActual > lbSobrepeso.text {
+            self.lbEstadoPeso.text = "Tu hijo está en la categoría de: Sobrepeso"
+        }
+        else {
+            self.lbEstadoPeso.text = "Tu hijo está en la categoría de: Peso Normal"
+        }
+        
+        if tallaActual < lbBajo.text {
+            self.lbEstadoTalla.text = "Tu hijo está en la categoría de: bajo"
+        }
+        else {
+            self.lbEstadoTalla.text = "Tu hijo está en la categoría de: Normal"
+        }
     }
 
     override func viewDidLoad() {
