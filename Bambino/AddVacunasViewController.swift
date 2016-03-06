@@ -164,7 +164,6 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
         // ...
         // Go back to the previous ViewController
         self.navigationController?.popViewControllerAnimated(true)
-        self.navigationController?.toolbarHidden = false
     }
     
     // MARK: - Navigation

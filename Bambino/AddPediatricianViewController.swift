@@ -25,6 +25,9 @@ class AddPediatricianViewController: UIViewController {
         let newBackButton = UIBarButtonItem(title: "Vacunas", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
         self.navigationItem.leftBarButtonItem = newBackButton;
         
+        let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
+        proxyViewForStatusBar.backgroundColor = UIColor(red: 0.0/255.0, green: 122.0/255.0, blue: 255.0/255.0, alpha: 0.35)
+        self.view.addSubview(proxyViewForStatusBar)
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -44,7 +47,6 @@ class AddPediatricianViewController: UIViewController {
         // ...
         // Go back to the previous ViewController
         self.navigationController?.popViewControllerAnimated(true)
-        self.navigationController?.toolbarHidden = false
     }
     
     @IBAction func quitarteclado(sender: UITapGestureRecognizer) {
