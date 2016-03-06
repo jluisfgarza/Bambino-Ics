@@ -22,6 +22,9 @@ class HistoryEnfViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 82.0/255.0, green: 78.0/255.0, blue: 147.0/255.0, alpha: 1.0)
         // Do any additional setup after loading the view.
     }
 
