@@ -10,11 +10,12 @@ import UIKit
 
 class HistoryEnfViewController: UIViewController {
 
+    @IBOutlet weak var dpFecha: UIDatePicker!
     @IBOutlet weak var tfAlergias: UITextField!
     @IBOutlet weak var tfEnfermedades: UITextField!
     @IBOutlet weak var tfMedicamentos: UITextField!
     @IBOutlet weak var tfComentarios: UITextField!
-    @IBOutlet weak var btGuardar: UIButton!
+
     
     
     
