@@ -694,6 +694,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tfCelular" destination="rDm-sc-Dij" id="ONf-SV-VuW"/>
+                        <outlet property="tfNombre" destination="YHa-5O-5vH" id="BHL-h4-HFW"/>
+                        <outlet property="tfTelefono" destination="IWR-NW-uQl" id="jpm-jB-njU"/>
+                        <outlet property="tfUbicacion" destination="cPo-bR-2uw" id="AqN-h8-CtJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGr-4S-69e" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="UQF-PT-BlA">
@@ -1003,9 +1009,9 @@
         <image name="stetoscopio" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="avX-ur-ps7"/>
+        <segue reference="kh4-0O-QbW"/>
         <segue reference="tLk-JC-t2y"/>
         <segue reference="aBL-Q2-GMB"/>
-        <segue reference="kh4-0O-QbW"/>
-        <segue reference="avX-ur-ps7"/>
     </inferredMetricsTieBreakers>
 </document>
