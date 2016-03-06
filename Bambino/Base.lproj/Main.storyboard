@@ -747,7 +747,7 @@
                         <barButtonItem image="icon-tips" width="70" id="vy7-tA-xS2">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="vdG-E9-Lp9" kind="show" id="4Y9-ar-R62"/>
+                                <segue destination="vdG-E9-Lp9" kind="show" identifier="segueTips" id="4Y9-ar-R62"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -755,7 +755,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Bebé +" id="hhz-2a-aDY">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="dqh-2x-8Zw" kind="show" id="JLF-P8-qB3"/>
+                                <segue destination="dqh-2x-8Zw" kind="show" identifier="segueAddBaby" id="JLF-P8-qB3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -779,7 +779,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="120" id="wec-6d-gao" customClass="KidsTableViewCell" customModule="Bambino" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wec-6d-gao" id="x72-Qa-cZZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
@@ -842,7 +842,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GnI-IG-YHi">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GnI-IG-YHi" id="7U1-HU-ukk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -954,9 +954,9 @@
         <image name="stetoscopio" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ywd-Cy-fiW"/>
-        <segue reference="9Nk-6a-Zym"/>
+        <segue reference="tLk-JC-t2y"/>
+        <segue reference="DTT-n6-4qc"/>
         <segue reference="JLF-P8-qB3"/>
-        <segue reference="aBL-Q2-GMB"/>
+        <segue reference="kh4-0O-QbW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -19,6 +19,13 @@ class AddPediatricianViewController: UIViewController {
     var index: Int!
     
     override func viewDidLoad() {
+        
+        self.navigationController?.toolbarHidden = true;
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Vacunas", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = newBackButton;
+        
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.tfPediatra.text = appData.mama.bebBabies[index].strNombrePediatra
@@ -30,6 +37,14 @@ class AddPediatricianViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        // ...
+        // Go back to the previous ViewController
+        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.toolbarHidden = false
     }
     
     @IBAction func quitarteclado(sender: UITapGestureRecognizer) {

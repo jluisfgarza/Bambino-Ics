@@ -17,6 +17,13 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
+        self.navigationController?.toolbarHidden = true;
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Agregar bebé", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = newBackButton;
+    
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,6 +65,14 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
                 appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus = true
             }
         }
+    }
+    
+    func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        // ...
+        // Go back to the previous ViewController
+        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.toolbarHidden = false
     }
     
     // MARK: - Navigation
