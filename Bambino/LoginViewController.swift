@@ -9,6 +9,12 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    
+    @IBOutlet weak var tfCorreo: UITextField!
+    @IBOutlet weak var tfContra: UITextField!
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
