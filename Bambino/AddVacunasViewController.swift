@@ -100,58 +100,133 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
         if indexPath.section == 0 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus) {
+                cell.accessoryType = .None
+            }
         }
         else if indexPath.section == 1 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 2].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 2].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 2].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 2].boolStatus) {
+                cell.accessoryType = .None
+            }
         }
         else if indexPath.section == 2 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 6].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 6].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 6].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 6].boolStatus) {
+                cell.accessoryType = .None
+            }
         }
         else if indexPath.section == 3 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 9].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 9].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 9].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 9].boolStatus) {
+                cell.accessoryType = .None
+            }
         }
         else if indexPath.section == 4 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 13].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 13].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 13].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 13].boolStatus) {
+                cell.accessoryType = .None
+            }
         }
         else if indexPath.section == 5 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 14].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 14].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 14].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 14].boolStatus) {
+                cell.accessoryType = .None
+            }
         }
         else if indexPath.section == 6 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 16].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 16].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 16].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 16].boolStatus) {
+                cell.accessoryType = .None
+            }
             
         }
         else if indexPath.section == 7 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 17].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 17].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 17].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 17].boolStatus) {
+                cell.accessoryType = .None
+            }
             
         }
         else if indexPath.section == 8 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 18].strVacuna)
             cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 18].strEnfermedad)
+            if cell.accessoryType == .None && appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 18].boolStatus {
+                cell.accessoryType = .Checkmark
+            }
+            if cell.accessoryType == .Checkmark && (!appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 18].boolStatus) {
+                cell.accessoryType = .None
+            }
         }
     
     return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-            if cell.accessoryType == .Checkmark
+            var index = 0
+            
+            switch indexPath.section {
+            case 0:
+                index = indexPath.row
+            case 1:
+                index = indexPath.row + 2
+            case 2:
+                index = indexPath.row + 6
+            case 3:
+                index = indexPath.row + 9
+            case 4:
+                index = indexPath.row + 13
+            case 5:
+                index = indexPath.row + 14
+            case 6:
+                index = indexPath.row + 16
+            case 7:
+                index = indexPath.row + 17
+            default:
+                index = indexPath.row + 18
+            }
+            
+            if tableView.cellForRowAtIndexPath(indexPath)!.accessoryType == .Checkmark
             {
-                cell.accessoryType = .None
-                appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus = false
+                appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[index].boolStatus = false
             }
             else
             {
-                cell.accessoryType = .Checkmark
-                appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus = true
+                appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[index].boolStatus = true
             }
-        }
+        
+        self.tableView.reloadData()
     }
     
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
