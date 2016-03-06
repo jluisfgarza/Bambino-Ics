@@ -38,7 +38,7 @@
                                 <rect key="frame" x="112" y="617" width="150" height="30"/>
                                 <state key="normal" title="Crear cuenta"/>
                                 <connections>
-                                    <segue destination="icA-NM-ucP" kind="show" id="CoN-93-pZD"/>
+                                    <segue destination="icA-NM-ucP" kind="show" identifier="register" id="CoN-93-pZD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor introduce tu correo electrónico:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSC-OL-U7Q">
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="0.0" y="561" width="375" height="48"/>
                                 <state key="normal" title="Iniciar sesión" backgroundImage="login-btn"/>
                                 <connections>
-                                    <segue destination="BcJ-U5-rmK" kind="presentation" id="Ywd-Cy-fiW"/>
+                                    <segue destination="BcJ-U5-rmK" kind="presentation" identifier="login" id="Ywd-Cy-fiW"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3y-wX-1RR">
@@ -135,7 +135,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dqh-2x-8Zw" kind="show" id="avX-ur-ps7"/>
+                                    <segue destination="dqh-2x-8Zw" kind="show" identifier="addbaby" id="avX-ur-ps7"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TOP-HEADER" translatesAutoresizingMaskIntoConstraints="NO" id="yzS-zg-gKd">
@@ -233,7 +233,7 @@
                                 <rect key="frame" x="20" y="507" width="335" height="50"/>
                                 <state key="normal" title="Agregar bebé"/>
                                 <connections>
-                                    <segue destination="aqh-qk-ZGE" kind="show" id="8SR-k1-hzx"/>
+                                    <segue destination="aqh-qk-ZGE" kind="show" identifier="addvacunas" id="8SR-k1-hzx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -268,7 +268,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="XU3-mh-HAa" style="IBUITableViewCellStyleDefault" id="mZH-O7-Xty">
-                                        <rect key="frame" x="0.0" y="92" width="335" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZH-O7-Xty" id="84X-JR-qWT">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
@@ -294,7 +294,7 @@
                                 <rect key="frame" x="20" y="573" width="335" height="50"/>
                                 <state key="normal" title="Agregar Vacunas"/>
                                 <connections>
-                                    <segue destination="NtO-ku-aUM" kind="show" id="DTT-n6-4qc"/>
+                                    <segue destination="NtO-ku-aUM" kind="show" identifier="addpediatra" id="DTT-n6-4qc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor selecciona las vacunas que se le han agregado a tu bebé" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw5-Vv-lhs">
@@ -585,7 +585,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wec-6d-gao">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wec-6d-gao" id="x72-Qa-cZZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -719,9 +719,9 @@
         <image name="login-btn" width="750" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tLk-JC-t2y"/>
+        <segue reference="avX-ur-ps7"/>
         <segue reference="DTT-n6-4qc"/>
-        <segue reference="JLF-P8-qB3"/>
+        <segue reference="tLk-JC-t2y"/>
         <segue reference="9Nk-6a-Zym"/>
     </inferredMetricsTieBreakers>
 </document>
