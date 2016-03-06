@@ -61,6 +61,9 @@ class SelectKidTableViewController: UITableViewController {
         if segueID == "pediatra" {
             performSegueWithIdentifier("seguePediatra", sender: nil)
         }
+        if segueID == "historial" {
+            performSegueWithIdentifier("segueHistorial", sender: nil)
+        }
     }
 
     // MARK: - Navigation
@@ -72,6 +75,11 @@ class SelectKidTableViewController: UITableViewController {
         
         if segue.identifier == "seguePediatra" {
             let view = segue.destinationViewController as! SeePediatricianViewController
+            view.appData = self.appData
+            view.index = self.tableView.indexPathForSelectedRow?.row
+        }
+        if segue.identifier == "segueHistorial" {
+            let view = segue.destinationViewController as! SeeHistoryTableViewController
             view.appData = self.appData
             view.index = self.tableView.indexPathForSelectedRow?.row
         }

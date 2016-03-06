@@ -11,6 +11,7 @@ import UIKit
 class SeeHistoryTableViewController: UITableViewController {
     
     var appData: ApplicationData!
+    var index: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
