@@ -367,6 +367,13 @@
                                     <action selector="tomafotobebe" destination="dqh-2x-8Zw" eventType="touchUpInside" id="AN6-hw-8Lu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Unw-KD-YVh">
+                                <rect key="frame" x="132" y="84" width="110" height="110"/>
+                                <state key="normal" title="+" backgroundImage="baby"/>
+                                <connections>
+                                    <action selector="tomafotobebe" destination="dqh-2x-8Zw" eventType="touchUpInside" id="Vvl-Oh-f7I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -956,15 +963,39 @@
                                 <color key="textColor" red="0.32156862745098042" green="0.30588235294117649" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola USERNAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDi-6S-XYr">
-                                <rect key="frame" x="0.0" y="108" width="375" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" red="0.32156862745098042" green="0.30588235294117649" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwk-pv-T6Z">
                                 <rect key="frame" x="20" y="218" width="335" height="272"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="ywQ-A5-rcs" detailTextLabel="Kzf-RH-v2V" style="IBUITableViewCellStyleSubtitle" id="2JQ-sG-n2H">
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2JQ-sG-n2H" id="4LA-L4-VnY">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ywQ-A5-rcs">
+                                                    <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kzf-RH-v2V">
+                                                    <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HS8-RY-iGV" id="S0f-YL-8jw"/>
+                                    <outlet property="delegate" destination="HS8-RY-iGV" id="dve-Xb-QEg"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dam-7o-VIE">
                                 <rect key="frame" x="93" y="512" width="188" height="41"/>
@@ -975,6 +1006,12 @@
                                     <segue destination="6vN-8i-xIv" kind="show" identifier="segueEvento" id="9Nk-6a-Zym"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola USERNAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDi-6S-XYr">
+                                <rect key="frame" x="0.0" y="108" width="375" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.32156862745098042" green="0.30588235294117649" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1324,6 +1361,9 @@
                                 <state key="normal" title="Guardar Reporte">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0kv-zl-Mln" kind="unwind" unwindAction="unwindSve:" id="EES-e5-zv1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -1339,6 +1379,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xl4-dD-fH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0kv-zl-Mln" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3509.5" y="380.5"/>
         </scene>
@@ -1484,6 +1525,7 @@
         <image name="TOP-HEADER" width="750" height="420"/>
         <image name="agregar-evento" width="377" height="80"/>
         <image name="avatar-circle" width="200" height="200"/>
+        <image name="baby" width="96" height="96"/>
         <image name="bottom-blur" width="750" height="509"/>
         <image name="icon-calendario" width="20" height="20"/>
         <image name="icon-historial" width="20" height="20"/>
@@ -1493,10 +1535,10 @@
         <image name="stetoscopio" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="avX-ur-ps7"/>
         <segue reference="kh4-0O-QbW"/>
         <segue reference="tLk-JC-t2y"/>
         <segue reference="aBL-Q2-GMB"/>
+        <segue reference="JLF-P8-qB3"/>
         <segue reference="ZKp-Pn-AIW"/>
     </inferredMetricsTieBreakers>
 </document>
