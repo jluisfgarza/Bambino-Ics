@@ -1055,27 +1055,12 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.5" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="aS9-K5-op4" rowHeight="80" style="IBUITableViewCellStyleDefault" id="IiO-wb-wdu">
-                                        <rect key="frame" x="0.0" y="160" width="375" height="80"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IiO-wb-wdu" id="x19-Bn-rkX">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Ver el historial de las citas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aS9-K5-op4">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="79.5"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="RRa-72-bfT" kind="show" identifier="segueHistoryEnf" id="VL0-8b-Oui"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="XJK-BT-7px" rowHeight="80" style="IBUITableViewCellStyleDefault" id="YAU-xP-aaC">
-                                        <rect key="frame" x="0.0" y="240" width="375" height="80"/>
+                                        <rect key="frame" x="0.0" y="160" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YAU-xP-aaC" id="Dt5-yI-YbW">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
@@ -1112,7 +1097,7 @@
         <!--History Enfermedades-->
         <scene sceneID="27o-1M-GIQ">
             <objects>
-                <viewController title="History Enfermedades" id="RRa-72-bfT" sceneMemberID="viewController">
+                <viewController title="History Enfermedades" id="RRa-72-bfT" customClass="HistoryEnfViewController" customModule="Bambino" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yoe-AU-Oty"/>
                         <viewControllerLayoutGuide type="bottom" id="mj0-37-fsk"/>
@@ -1154,24 +1139,7 @@
                                 <rect key="frame" x="15" y="242" width="340" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Medicamentos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-T9-Em2">
-                                        <rect key="frame" x="8" y="8" width="324" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" red="0.36470588240000001" green="0.80392156859999997" blue="0.71764705880000002" alpha="0.5" colorSpace="calibratedRGB"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comentarios:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUp-zO-siA">
-                                <rect key="frame" x="20" y="298" width="335" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7I-mw-Ya0">
-                                <rect key="frame" x="17" y="332" width="340" height="147"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Comentarios" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-dc-qtt">
-                                        <rect key="frame" x="8" y="8" width="324" height="131"/>
+                                        <rect key="frame" x="8" y="8" width="324" height="64"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1183,6 +1151,27 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Alergias" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyN-Pp-0hZ">
                                         <rect key="frame" x="8" y="8" width="324" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.36470588240000001" green="0.80392156859999997" blue="0.71764705880000002" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comentarios:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUp-zO-siA">
+                                <rect key="frame" x="17" y="295" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaB-ll-WX6">
+                                <rect key="frame" x="20" y="539" width="335" height="30"/>
+                                <state key="normal" title="Guardar Reporte"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z7I-mw-Ya0">
+                                <rect key="frame" x="17" y="324" width="340" height="147"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Comentarios" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-dc-qtt">
+                                        <rect key="frame" x="4" y="0.0" width="332" height="147"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
