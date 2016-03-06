@@ -20,14 +20,11 @@ class AddPediatricianViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        
         self.navigationController?.toolbarHidden = true;
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "Vacunas", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
         self.navigationItem.leftBarButtonItem = newBackButton;
-        
-        let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
-        proxyViewForStatusBar.backgroundColor = UIColor(red: 0.0/255.0, green: 122.0/255.0, blue: 255.0/255.0, alpha: 0.35)
-        self.view.addSubview(proxyViewForStatusBar)
         
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -35,6 +32,14 @@ class AddPediatricianViewController: UIViewController {
         self.tfPediatra_tel.text = appData.mama.bebBabies[index].strTelefono
         self.tfPediatra_cel.text = appData.mama.bebBabies[index].strCelular
         self.tfPediatra_direc.text = appData.mama.bebBabies[index].strUbicacion
+        
+        let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
+        proxyViewForStatusBar.backgroundColor = UIColor(red: 0.48627450980392156, green: 0.070588235294117646, blue: 0.46274509803921571, alpha: 0.0)
+        self.view.addSubview(proxyViewForStatusBar)
+        
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green: 93.0/255.0, blue: 193.0/255.0, alpha: 1.0)
     }
 
     override func didReceiveMemoryWarning() {
