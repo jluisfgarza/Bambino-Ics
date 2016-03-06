@@ -9,6 +9,12 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
+    
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfEdad: UITextField!
+    @IBOutlet weak var tfContra: UITextField!
+    @IBOutlet weak var tfConfContra: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +28,7 @@ class SignUpViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -30,6 +36,6 @@ class SignUpViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }

@@ -9,6 +9,14 @@
 import UIKit
 
 class AddBabyViewController: UIViewController {
+    
+    
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var dpFecha: UIDatePicker!
+    @IBOutlet weak var tfPeso: UITextField!
+    @IBOutlet weak var tfTalla: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +28,9 @@ class AddBabyViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
+
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -30,6 +38,6 @@ class AddBabyViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }

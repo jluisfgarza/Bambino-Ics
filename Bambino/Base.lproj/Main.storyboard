@@ -71,7 +71,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="tfContra" destination="UMJ-Tc-yq7" id="XRs-Sy-H1D"/>
+                        <outlet property="tfContra" destination="UMJ-Tc-yq7" id="y2L-X4-2e1"/>
                         <outlet property="tfCorreo" destination="Y3y-wX-1RR" id="5rf-zB-Nkc"/>
                     </connections>
                 </viewController>
@@ -155,6 +155,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tfConfContra" destination="rZv-vU-ygj" id="8W0-qn-gTt"/>
+                        <outlet property="tfContra" destination="s7O-dm-y1c" id="4ac-V5-sOI"/>
+                        <outlet property="tfEdad" destination="a3X-2p-2Zi" id="DVs-Tb-nUO"/>
+                        <outlet property="tfNombre" destination="95l-0B-LUU" id="EIA-je-gsv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hh7-KR-JWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +206,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor introduce la tall actual en cm." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTX-GL-3HW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor introduce la talla actual en cm." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTX-GL-3HW">
                                 <rect key="frame" x="20" y="360" width="335" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -234,6 +240,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="dpFecha" destination="VSc-pX-YfA" id="0b3-YF-aNf"/>
+                        <outlet property="tfNombre" destination="H7B-uv-DUl" id="USo-tH-koA"/>
+                        <outlet property="tfPeso" destination="C6g-9t-UYn" id="Axk-00-WQT"/>
+                        <outlet property="tfTalla" destination="znF-9w-sPS" id="E3h-Mv-1vZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYB-cs-1Da" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,7 +318,7 @@
         <!--Pediatra-->
         <scene sceneID="xoS-MP-f7t">
             <objects>
-                <viewController title="Pediatra" id="NtO-ku-aUM" sceneMemberID="viewController">
+                <viewController title="Pediatra" id="NtO-ku-aUM" customClass="AddPediatricianViewController" customModule="Bambino" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mdg-pk-1z6"/>
                         <viewControllerLayoutGuide type="bottom" id="h8v-sC-qLF"/>
@@ -460,7 +472,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dOd-0w-yJ7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="dOd-0w-yJ7">
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dOd-0w-yJ7" id="L1k-9O-h9D">
