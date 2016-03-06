@@ -23,7 +23,7 @@ class AddPediatricianViewController: UIViewController {
         
         self.navigationController?.toolbarHidden = true;
         self.navigationItem.hidesBackButton = true
-        let newBackButton = UIBarButtonItem(title: "Vacunas", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
+        let newBackButton = UIBarButtonItem(title: "Pediatra", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
         self.navigationItem.leftBarButtonItem = newBackButton;
         
         super.viewDidLoad()
