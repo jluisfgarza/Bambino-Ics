@@ -10,6 +10,12 @@ import UIKit
 
 class AddPediatricianViewController: UIViewController {
 
+    @IBOutlet weak var tfPediatra: UITextField!
+    @IBOutlet weak var tfPediatra_tel: UITextField!
+    @IBOutlet weak var tfPediatra_cel: UITextField!
+    @IBOutlet weak var tfPediatra_direc: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

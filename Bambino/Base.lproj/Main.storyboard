@@ -268,7 +268,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="XU3-mh-HAa" style="IBUITableViewCellStyleDefault" id="mZH-O7-Xty">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZH-O7-Xty" id="84X-JR-qWT">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
@@ -327,11 +327,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCf-xS-29P">
-                                <rect key="frame" x="20" y="141" width="335" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Porfavor introduce el teléfono del consultorio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-n9-6Wy">
                                 <rect key="frame" x="6" y="168" width="349" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -379,12 +374,23 @@
                                     <segue destination="BcJ-U5-rmK" kind="show" id="tLk-JC-t2y"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCf-xS-29P">
+                                <rect key="frame" x="20" y="142" width="335" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tfPediatra" destination="cCf-xS-29P" id="WbJ-sd-27L"/>
+                        <outlet property="tfPediatra_cel" destination="UUi-Im-rPA" id="hga-KO-Ndr"/>
+                        <outlet property="tfPediatra_direc" destination="D21-GE-KYV" id="xVY-iu-G96"/>
+                        <outlet property="tfPediatra_tel" destination="MUa-gg-tHn" id="V7X-Qu-vl1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6C-PK-pP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -579,7 +585,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wec-6d-gao">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wec-6d-gao" id="x72-Qa-cZZ">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -713,9 +719,9 @@
         <image name="login-btn" width="750" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ywd-Cy-fiW"/>
-        <segue reference="9Nk-6a-Zym"/>
-        <segue reference="avX-ur-ps7"/>
+        <segue reference="tLk-JC-t2y"/>
         <segue reference="DTT-n6-4qc"/>
+        <segue reference="JLF-P8-qB3"/>
+        <segue reference="9Nk-6a-Zym"/>
     </inferredMetricsTieBreakers>
 </document>
