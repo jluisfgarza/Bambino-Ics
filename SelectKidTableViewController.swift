@@ -22,6 +22,12 @@ class SelectKidTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        self.navigationController?.toolbarHidden = true;
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Menú", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = newBackButton;
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -33,6 +39,16 @@ class SelectKidTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        // ...
+        // Go back to the previous ViewController
+        self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.toolbarHidden = false
+    }
+    
 
     // MARK: - Table view data source
 
