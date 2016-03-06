@@ -74,5 +74,15 @@ class HistorySelectEnferTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let view = segue.destinationViewController as! HistoryEnfViewController
+        view.appData = self.appData
+        view.babyIndex = self.index
+        if segue.identifier == "segueViewEnfermedad" {
+            view.EnfermedadIndex = tableView.indexPathForSelectedRow?.row
+        }
+        else {
+            view.EnfermedadIndex = -1
+        }
     }
 }
