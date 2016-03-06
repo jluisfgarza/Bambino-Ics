@@ -384,7 +384,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="XU3-mh-HAa" style="IBUITableViewCellStyleDefault" id="mZH-O7-Xty">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZH-O7-Xty" id="84X-JR-qWT">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
@@ -697,7 +697,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola USERNAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDi-6S-XYr">
-                                <rect key="frame" x="124" y="108" width="126" height="64"/>
+                                <rect key="frame" x="20" y="108" width="230" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.32156862745098042" green="0.30588235294117649" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -755,6 +755,9 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lbUsuario" destination="LDi-6S-XYr" id="NZc-bP-cqW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVo-6j-Ezn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -813,6 +816,11 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="upU-uH-ocD" kind="show" identifier="seguePediatra" id="cew-BB-XZR"/>
+                        <segue destination="vIt-iW-yCi" kind="show" identifier="segueHistorial" id="dQJ-X6-qeU"/>
+                        <segue destination="PYi-Ac-ZxC" kind="show" identifier="segueNuevoEvento" id="bBi-iy-YxP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4z-da-t6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -828,7 +836,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GnI-IG-YHi">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GnI-IG-YHi" id="7U1-HU-ukk">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -940,9 +948,9 @@
         <image name="stetoscopio" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tLk-JC-t2y"/>
-        <segue reference="DTT-n6-4qc"/>
-        <segue reference="avX-ur-ps7"/>
+        <segue reference="Ywd-Cy-fiW"/>
         <segue reference="9Nk-6a-Zym"/>
+        <segue reference="JLF-P8-qB3"/>
+        <segue reference="aBL-Q2-GMB"/>
     </inferredMetricsTieBreakers>
 </document>
