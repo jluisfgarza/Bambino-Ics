@@ -37,7 +37,9 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func quitarteclado(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
     
     // MARK: - Navigation
 
