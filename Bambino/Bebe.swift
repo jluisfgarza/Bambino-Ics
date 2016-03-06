@@ -23,18 +23,30 @@ class Bebe: NSObject {
     var pesoTalla: PesoTalla
     
     override init() {
-        self.strNombre = ""
+        self.strNombre = "Bebe"
         self.fechaNacimiento = NSDate()
-        self.douPeso = 0
-        self.douTalla = 0
-        self.strNombrePediatra = ""
-        self.strTelefono = ""
-        self.strCelular = ""
-        self.strUbicacion = ""
+        self.douPeso = 3
+        self.douTalla = 50
+        self.strNombrePediatra = "Pediatra"
+        self.strTelefono = "12345678"
+        self.strCelular = "98765432"
+        self.strUbicacion = "Dirección del doctor"
         self.arrConsulta = []
         self.arrVacunas = []
         self.arrEventoProximo = []
         self.pesoTalla = PesoTalla()
+        
+        let path = NSBundle.mainBundle().pathForResource("Vacunas", ofType: "plist")
+        let nsarrayVacunas = NSArray(contentsOfFile: path!)
+        
+        for dict in nsarrayVacunas! {
+            let vacuna = Vacuna()
+            vacuna.fecha = (dict.objectForKey("fecha")?.integerValue)!
+            vacuna.strVacuna = String(dict.objectForKey("Vacuna"))
+            vacuna.strEnfermedad = String(dict.objectForKey("Enfermedad"))
+            
+            self.arrVacunas.append(vacuna)
+        }
     }
     
     init(nombre: String, fechaNacimiento: NSDate, peso: Double, talla: Double) {
@@ -50,6 +62,17 @@ class Bebe: NSObject {
         self.arrVacunas = []
         self.arrEventoProximo = []
         self.pesoTalla = PesoTalla()
+        
+        let path = NSBundle.mainBundle().pathForResource("Vacunas", ofType: "plist")
+        let nsarrayVacunas = NSArray(contentsOfFile: path!)
+        
+        for dict in nsarrayVacunas! {
+            let vacuna = Vacuna()
+            vacuna.fecha = (dict.objectForKey("fecha")?.integerValue)!
+            vacuna.strVacuna = String(dict.objectForKey("Vacuna"))
+            vacuna.strEnfermedad = String(dict.objectForKey("Enfermedad"))
+            
+            self.arrVacunas.append(vacuna)
+        }
     }
-
 }

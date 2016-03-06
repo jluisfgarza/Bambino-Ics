@@ -9,6 +9,8 @@
 import UIKit
 
 class SeePediatricianViewController: UIViewController {
+    
+    var appData: ApplicationData!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,11 +16,11 @@ class Mama: NSObject {
     var bebBabies: [Bebe]
     
     override init() {
-        self.strNombre = ""
-        self.strCorreo = ""
-        self.strPassword = ""
+        self.strNombre = "Juanita"
+        self.strCorreo = "juanita@mail.com"
+        self.strPassword = "password"
         self.FechaNacimiento = NSDate()
-        self.bebBabies = []
+        self.bebBabies = [Bebe()]
     }
     
     init(nombre: String, correo: String, password: String, fechaNacimiento: NSDate) {

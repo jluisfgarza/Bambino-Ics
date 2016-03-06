@@ -9,7 +9,9 @@
 import UIKit
 
 class SeeCalendarViewController: UIViewController {
-
+    
+    var appData: ApplicationData!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

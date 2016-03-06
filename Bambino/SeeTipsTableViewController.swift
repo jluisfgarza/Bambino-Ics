@@ -9,7 +9,9 @@
 import UIKit
 
 class SeeTipsTableViewController: UITableViewController {
-
+    
+    var appData: ApplicationData!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

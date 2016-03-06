@@ -39,8 +39,9 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier == "login" {
-            let view = segue.destinationViewController as! HomeViewController
-            view.appData = self.appData
+            let nav = segue.destinationViewController as! UINavigationController
+            let home = nav.topViewController as! HomeViewController
+            home.appData = self.appData
         }
         else {
             let view = segue.destinationViewController as! SignUpViewController

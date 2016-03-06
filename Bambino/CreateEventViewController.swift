@@ -9,6 +9,8 @@
 import UIKit
 
 class CreateEventViewController: UIViewController {
+    
+    var appData: ApplicationData!
 
     override func viewDidLoad() {
         super.viewDidLoad()
