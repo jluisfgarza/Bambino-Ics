@@ -28,6 +28,10 @@ class AddPediatricianViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func quitarteclado(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         if tfPediatra.text == "" || tfPediatra_tel.text == "" || tfPediatra_cel.text == "" || tfPediatra_direc.text == "" {
             return false

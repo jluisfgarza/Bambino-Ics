@@ -47,6 +47,9 @@ class AddBabyViewController: UIViewController {
         return true
     }
 
+    @IBAction func quitarteclado(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
 
     
     // MARK: - Navigation
