@@ -13,13 +13,15 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var tfCorreo: UITextField!
     @IBOutlet weak var tfContra: UITextField!
-
+    
+    var appData: ApplicationData!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        self.appData = ApplicationData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +37,14 @@ class LoginViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "login" {
+            let view = segue.destinationViewController as! HomeViewController
+            view.appData = self.appData
+        }
+        else {
+            let view = segue.destinationViewController as! SignUpViewController
+            view.appData = self.appData
+        }
     }
-
-
 }

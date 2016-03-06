@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    
+    var appData: ApplicationData!
     
     override func viewDidLoad() {
         super.viewDidLoad()

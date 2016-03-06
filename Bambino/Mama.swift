@@ -12,14 +12,14 @@ class Mama: NSObject {
     var strNombre: String
     var strCorreo: String
     var strPassword: String
-    var strFechaNacimiento: NSDate
+    var FechaNacimiento: NSDate
     var bebBabies: [Bebe]
     
     override init() {
         self.strNombre = ""
         self.strCorreo = ""
         self.strPassword = ""
-        self.strFechaNacimiento = NSDate()
+        self.FechaNacimiento = NSDate()
         self.bebBabies = []
     }
     
@@ -27,7 +27,7 @@ class Mama: NSObject {
         self.strNombre = nombre
         self.strCorreo = correo
         self.strPassword = password
-        self.strFechaNacimiento = fechaNacimiento
+        self.FechaNacimiento = fechaNacimiento
         self.bebBabies = []
     }
 }

@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var tfContra: UITextField!
     @IBOutlet weak var tfConfContra: UITextField!
     
+    var appData: ApplicationData!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,13 @@ class SignUpViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        appData.mama.strNombre = tfNombre.text!
+        appData.mama.strPassword = tfContra.text!
+        
+        let view = segue.destinationViewController as! AddBabyViewController
+        view.appData = appData
+        
     }
 
 

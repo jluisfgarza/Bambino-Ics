@@ -12,6 +12,8 @@ class AddVacunasViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var appData: ApplicationData!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

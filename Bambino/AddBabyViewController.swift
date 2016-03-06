@@ -16,6 +16,7 @@ class AddBabyViewController: UIViewController {
     @IBOutlet weak var tfPeso: UITextField!
     @IBOutlet weak var tfTalla: UITextField!
     
+    var appData: ApplicationData!
     
 
     override func viewDidLoad() {
@@ -37,6 +38,16 @@ class AddBabyViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let peso = Double(tfPeso.text!)!
+        let talla = Double(tfTalla.text!)!
+        
+        let baby = Bebe(nombre: self.tfNombre.text!, fechaNacimiento: NSDate(), peso: peso, talla: talla)
+        
+        self.appData.mama.bebBabies.append(baby)
+        
+        let view = segue.destinationViewController as! AddVacunasViewController
+        view.appData = self.appData
     }
 
 
