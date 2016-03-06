@@ -29,6 +29,9 @@ class HistoryTableTPViewController: UIViewController {
     var appData: ApplicationData!
     var index: Int!
     
+    @IBAction func btCalcular(sender: AnyObject) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
