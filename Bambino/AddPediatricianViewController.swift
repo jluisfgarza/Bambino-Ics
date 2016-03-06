@@ -47,7 +47,6 @@ class AddPediatricianViewController: UIViewController {
         // ...
         // Go back to the previous ViewController
         self.navigationController?.popViewControllerAnimated(true)
-        self.navigationController?.toolbarHidden = false
     }
     
     @IBAction func quitarteclado(sender: UITapGestureRecognizer) {
