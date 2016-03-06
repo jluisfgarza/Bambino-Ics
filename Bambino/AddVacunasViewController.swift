@@ -41,6 +41,10 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
+        let months = NSCalendar.currentCalendar().components(.Month, fromDate: self.appData.mama.bebBabies[appData.mama.bebBabies.count - 1].fechaNacimiento, toDate: NSDate(), options: []).month
+        
+        
+        
         return appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas.count
     }
     

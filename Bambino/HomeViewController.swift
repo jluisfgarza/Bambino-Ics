@@ -50,8 +50,9 @@ class HomeViewController: UIViewController {
             view.appData = self.appData
             view.segueID = segue.identifier
         }
-        else {
-            
+        else if segue.identifier == "segueAddBaby" {
+            let view = segue.destinationViewController as! AddBabyViewController
+            view.appData = self.appData
         }
     }
 }

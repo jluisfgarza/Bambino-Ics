@@ -18,8 +18,6 @@ class AddBabyViewController: UIViewController {
     
     var appData: ApplicationData!
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
