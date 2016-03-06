@@ -10,6 +10,12 @@ import UIKit
 
 class SeePediatricianViewController: UIViewController {
     
+    
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfTelefono: UITextField!
+    @IBOutlet weak var tfCelular: UITextField!
+    @IBOutlet weak var tfUbicacion: UITextField!
+    
     var appData: ApplicationData!
     var index: Int!
 
