@@ -1253,7 +1253,7 @@
                                 <rect key="frame" x="20" y="364" width="335" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Medicamentos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWz-T9-Em2">
-                                        <rect key="frame" x="8" y="8" width="324" height="64"/>
+                                        <rect key="frame" x="5" y="-9" width="324" height="64"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1264,7 +1264,7 @@
                                 <rect key="frame" x="20" y="200" width="335" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Alergias" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyN-Pp-0hZ">
-                                        <rect key="frame" x="0.0" y="7" width="324" height="30"/>
+                                        <rect key="frame" x="8" y="7" width="324" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1281,7 +1281,7 @@
                                 <rect key="frame" x="20" y="446" width="335" height="117"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Comentarios" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-dc-qtt">
-                                        <rect key="frame" x="4" y="0.0" width="332" height="117"/>
+                                        <rect key="frame" x="4" y="9" width="319" height="96"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1329,7 +1329,7 @@
         <!--Historial Enfermedades-->
         <scene sceneID="muo-Xb-QHB">
             <objects>
-                <tableViewController title="Historial Enfermedades" id="Lt9-lt-VOv" sceneMemberID="viewController">
+                <tableViewController title="Historial Enfermedades" id="Lt9-lt-VOv" customClass="HistorySelectEnferTableViewController" customModule="Bambino" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="y9w-hb-Gqj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
