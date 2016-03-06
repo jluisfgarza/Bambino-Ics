@@ -23,6 +23,9 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
         let newBackButton = UIBarButtonItem(title: "Agregar bebé", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
         self.navigationItem.leftBarButtonItem = newBackButton;
     
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 72.0/255.0, green: 190.0/255.0, blue: 176.0/255.0, alpha: 1.0)
     
     }
 
@@ -164,6 +167,7 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
         // ...
         // Go back to the previous ViewController
         self.navigationController?.popViewControllerAnimated(true)
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 72.0/255.0, green: 190.0/255.0, blue: 176.0/255.0, alpha: 1.0)
     }
     
     // MARK: - Navigation
