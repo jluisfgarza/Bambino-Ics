@@ -1,22 +1,18 @@
 //
-//  SeeHistoryTableViewController.swift
+//  HistoryEnferTableViewController.swift
 //  Bambino
 //
-//  Created by Pablo Diaz on 05/03/16.
+//  Created by Pablo Diaz on 06/03/16.
 //  Copyright © 2016 Temporal3.0. All rights reserved.
 //
 
 import UIKit
 
-class SeeHistoryTableViewController: UITableViewController {
-    
-    var appData: ApplicationData!
-    var index: Int!
+class HistoryEnferTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController!.navigationBar.barTintColor = UIColor(red: 72.0/255.0, green: 190.0/255.0, blue: 176.0/255.0, alpha: 1.0)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,6 +23,18 @@ class SeeHistoryTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
     }
 
     /*
@@ -74,26 +82,14 @@ class SeeHistoryTableViewController: UITableViewController {
     }
     */
 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "segueHistorialVacunas" {
-            let view = segue.destinationViewController as! HistoryVacunasTableViewController
-            view.appData = self.appData
-            view.index = self.index
-            
-        }
-        else if segue.identifier == "segueHistorialEnfermedades" {
-            
-        }
-        else if segue.identifier == "segueHistorialCitas" {
-            
-        }
-        else if segue.identifier == "segueHistorialTablapt" {
-            
-        }
     }
+    */
+
 }
