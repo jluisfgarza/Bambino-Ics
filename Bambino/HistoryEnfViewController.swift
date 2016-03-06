@@ -15,6 +15,7 @@ class HistoryEnfViewController: UIViewController {
     @IBOutlet weak var tfEnfermedades: UITextField!
     @IBOutlet weak var tfMedicamentos: UITextField!
     @IBOutlet weak var tfComentarios: UITextField!
+    @IBOutlet weak var btGuardar: UIButton!
 
     
     

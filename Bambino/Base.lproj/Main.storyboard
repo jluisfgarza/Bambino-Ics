@@ -1327,6 +1327,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="btGuardar" destination="TaB-ll-WX6" id="gOa-ND-Ag8"/>
                         <outlet property="dpFecha" destination="xzw-Yi-8Wc" id="nDg-8e-0m8"/>
                         <outlet property="tfAlergias" destination="zyN-Pp-0hZ" id="Ezo-Lz-RGh"/>
                         <outlet property="tfComentarios" destination="6Q8-dc-qtt" id="OaJ-O9-fzd"/>
@@ -1493,6 +1494,6 @@
         <segue reference="kh4-0O-QbW"/>
         <segue reference="tLk-JC-t2y"/>
         <segue reference="aBL-Q2-GMB"/>
-        <segue reference="oN2-PV-X4j"/>
+        <segue reference="ZKp-Pn-AIW"/>
     </inferredMetricsTieBreakers>
 </document>
