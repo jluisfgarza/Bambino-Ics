@@ -39,7 +39,9 @@ class AddPediatricianViewController: UIViewController {
         
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        if self.navigationController != nil {
         self.navigationController!.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green: 93.0/255.0, blue: 193.0/255.0, alpha: 1.0)
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -25,7 +25,9 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
     
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        if self.navigationController != nil {
         self.navigationController!.navigationBar.barTintColor = UIColor(red: 72.0/255.0, green: 190.0/255.0, blue: 176.0/255.0, alpha: 1.0)
+        }
     
     }
 
@@ -90,58 +92,48 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
         default:
             return 1
         }
-        
-        
-        // #warning Incomplete implementation, return the number of rows
-        
-        /*let months = NSCalendar.currentCalendar().components(.Month, fromDate: self.appData.mama.bebBabies[appData.mama.bebBabies.count - 1].fechaNacimiento, toDate: NSDate(), options: []).month
-        
-        var iCont = 0
-        
-        while iCont < self.appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas.count &&
-        self.appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[iCont].fecha <= months
-        {
-            iCont++
-        }
-        
-        return iCont*/
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-    /*
-    cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].strVacuna)
-    */
-    
+
         if indexPath.section == 0 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].strEnfermedad)
         }
         else if indexPath.section == 1 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 2].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 2].strEnfermedad)
         }
         else if indexPath.section == 2 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 6].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 6].strEnfermedad)
         }
         else if indexPath.section == 3 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 9].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 9].strEnfermedad)
         }
         else if indexPath.section == 4 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 13].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 13].strEnfermedad)
         }
         else if indexPath.section == 5 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 14].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 14].strEnfermedad)
         }
         else if indexPath.section == 6 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 16].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 16].strEnfermedad)
             
         }
         else if indexPath.section == 7 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 17].strVacuna)
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 17].strEnfermedad)
             
         }
         else if indexPath.section == 8 {
             cell.textLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 18].strVacuna)
-            
+            cell.detailTextLabel?.text = (appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row + 18].strEnfermedad)
         }
     
     return cell
@@ -159,6 +151,29 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
                 cell.accessoryType = .Checkmark
                 appData.mama.bebBabies[appData.mama.bebBabies.count - 1].arrVacunas[indexPath.row].boolStatus = true
             }
+        }
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Al nacer"
+        case 1:
+            return "A los 2 meses"
+        case 2:
+            return "A los 4 meses"
+        case 3:
+            return "A los 6 meses"
+        case 4:
+            return "A los 7 meses"
+        case 5:
+            return "Al año"
+        case 6:
+            return "Al año y medio"
+        case 7:
+            return "A los 4 años"
+        default:
+            return "A los 6 años"
         }
     }
     
