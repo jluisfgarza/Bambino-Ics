@@ -11,9 +11,10 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     @IBOutlet weak var tfNombre: UITextField!
-    @IBOutlet weak var tfEdad: UITextField!
     @IBOutlet weak var tfContra: UITextField!
     @IBOutlet weak var tfConfContra: UITextField!
+    @IBOutlet weak var tfemail: UITextField!
+    @IBOutlet weak var dpnacimiento: UIDatePicker!
     
     var appData: ApplicationData!
 
@@ -37,13 +38,13 @@ class SignUpViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        appData.mama.strNombre = tfNombre.text!
-        appData.mama.strPassword = tfContra.text!
+        appData.mama.strNombre = self.tfNombre.text!
+        appData.mama.strPassword = self.tfContra.text!
+        appData.mama.strCorreo = self.tfemail.text!
+        appData.mama.FechaNacimiento = self.dpnacimiento.date
         
         let view = segue.destinationViewController as! AddBabyViewController
         view.appData = appData
         
     }
-
-
 }
