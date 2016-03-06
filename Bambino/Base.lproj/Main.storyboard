@@ -146,7 +146,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yt0-1K-xJu">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="yt0-1K-xJu">
                                 <rect key="frame" x="20" y="329" width="340" height="62"/>
                                 <date key="date" timeIntervalSinceReferenceDate="478928021.79231203">
                                     <!--2016-03-06 03:33:41 +0000-->
@@ -281,7 +281,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="XU3-mh-HAa" style="IBUITableViewCellStyleDefault" id="mZH-O7-Xty">
-                                        <rect key="frame" x="0.0" y="92" width="335" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZH-O7-Xty" id="84X-JR-qWT">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
@@ -554,25 +554,25 @@
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Calendario" id="YB0-hI-Red">
-                            <color key="tintColor" red="0.36470588235294116" green="0.80392156862745101" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="mly-fj-OEX" kind="show" id="gSP-lS-BbU"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Historial" width="95" id="Oih-Xq-ocD">
-                            <color key="tintColor" red="0.36470588240000001" green="0.80392156859999997" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="6vN-8i-xIv" kind="show" id="dxU-Xl-CeQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Pediatra" width="94.5" id="SjV-6E-UPS">
-                            <color key="tintColor" red="0.36470588240000001" green="0.80392156859999997" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="6vN-8i-xIv" kind="show" id="kh4-0O-QbW"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem title="Tips" width="57" id="vy7-tA-xS2">
-                            <color key="tintColor" red="0.36470588240000001" green="0.80392156859999997" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="vdG-E9-Lp9" kind="show" id="4Y9-ar-R62"/>
                             </connections>
@@ -580,7 +580,7 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Title" id="FIq-wf-qX5">
                         <barButtonItem key="rightBarButtonItem" title="Bebé +" id="hhz-2a-aDY">
-                            <color key="tintColor" red="0.36470588240000001" green="0.80392156859999997" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="dqh-2x-8Zw" kind="show" id="JLF-P8-qB3"/>
                             </connections>
@@ -740,7 +740,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Ywd-Cy-fiW"/>
         <segue reference="9Nk-6a-Zym"/>
-        <segue reference="JLF-P8-qB3"/>
+        <segue reference="avX-ur-ps7"/>
         <segue reference="aBL-Q2-GMB"/>
     </inferredMetricsTieBreakers>
 </document>
