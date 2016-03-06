@@ -11,10 +11,11 @@ import UIKit
 class SeePediatricianViewController: UIViewController {
     
     var appData: ApplicationData!
+    var index: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 

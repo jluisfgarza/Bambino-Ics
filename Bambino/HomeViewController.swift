@@ -28,6 +28,8 @@ class HomeViewController: UIViewController {
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         // Do any additional setup after loading the view.
+        
+        self.lbUsuario.text = "Hola \(self.appData.mama.strNombre)"
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,9 +45,10 @@ class HomeViewController: UIViewController {
         self.navigationController?.toolbarHidden = false
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "segueEvento"  || segue.identifier == "pediatra" || segue.identifier == "historial"{
+        if segue.identifier == "segueEvento"  || segue.identifier == "pediatra" || segue.identifier == "historial" {
             let view = segue.destinationViewController as! SelectKidTableViewController
             view.appData = self.appData
+            view.segueID = segue.identifier
         }
         else {
             
