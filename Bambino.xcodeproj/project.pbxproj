@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EE7175F1C8B9863005DE182 /* AddVacunasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE7175E1C8B9863005DE182 /* AddVacunasViewController.swift */; };
+		6EE717631C8B9C79005DE182 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE717621C8B9C79005DE182 /* AddEventViewController.swift */; };
+		6EE717651C8B9C94005DE182 /* SeeCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE717641C8B9C94005DE182 /* SeeCalendarViewController.swift */; };
+		6EE717671C8B9CAC005DE182 /* SeeHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE717661C8B9CAC005DE182 /* SeeHistoryTableViewController.swift */; };
+		6EE717691C8B9CF7005DE182 /* SeePediatricianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE717681C8B9CF7005DE182 /* SeePediatricianViewController.swift */; };
+		6EE7176B1C8B9D0E005DE182 /* SeeTipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE7176A1C8B9D0E005DE182 /* SeeTipsTableViewController.swift */; };
+		6EE7176D1C8BAF07005DE182 /* AddPediatricianViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE7176C1C8BAF07005DE182 /* AddPediatricianViewController.swift */; };
+		6EE7176F1C8BAFEB005DE182 /* SelectKidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE7176E1C8BAFEB005DE182 /* SelectKidTableViewController.swift */; };
+		6EE717711C8BB0E8005DE182 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE717701C8BB0E8005DE182 /* CreateEventViewController.swift */; };
+		950386801C8B708300E74666 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503867F1C8B708300E74666 /* AppDelegate.swift */; };
+		950386851C8B708300E74666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 950386831C8B708300E74666 /* Main.storyboard */; };
+		950386881C8B708300E74666 /* Bambino.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 950386861C8B708300E74666 /* Bambino.xcdatamodeld */; };
+		9503868A1C8B708300E74666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 950386891C8B708300E74666 /* Assets.xcassets */; };
+		9503868D1C8B708300E74666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9503868B1C8B708300E74666 /* LaunchScreen.storyboard */; };
+		950386A61C8B7D3D00E74666 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950386A51C8B7D3D00E74666 /* LoginViewController.swift */; };
+		950386A81C8B7D5900E74666 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950386A71C8B7D5900E74666 /* SignUpViewController.swift */; };
+		950386AA1C8B7D6B00E74666 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950386A91C8B7D6B00E74666 /* HomeViewController.swift */; };
+		950C14F61C8B7E06001658FF /* AddBabyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950C14F51C8B7E06001658FF /* AddBabyViewController.swift */; };
+		950C14FA1C8B7F35001658FF /* Vacunas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 950C14F91C8B7F35001658FF /* Vacunas.plist */; };
+		950C14FC1C8B985C001658FF /* PesoTalla.plist in Resources */ = {isa = PBXBuildFile; fileRef = 950C14FB1C8B985C001658FF /* PesoTalla.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6EE7175E1C8B9863005DE182 /* AddVacunasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVacunasViewController.swift; sourceTree = "<group>"; };
+		6EE717621C8B9C79005DE182 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		6EE717641C8B9C94005DE182 /* SeeCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeCalendarViewController.swift; sourceTree = "<group>"; };
+		6EE717661C8B9CAC005DE182 /* SeeHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeHistoryTableViewController.swift; sourceTree = "<group>"; };
+		6EE717681C8B9CF7005DE182 /* SeePediatricianViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeePediatricianViewController.swift; sourceTree = "<group>"; };
+		6EE7176A1C8B9D0E005DE182 /* SeeTipsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeTipsTableViewController.swift; sourceTree = "<group>"; };
+		6EE7176C1C8BAF07005DE182 /* AddPediatricianViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPediatricianViewController.swift; sourceTree = "<group>"; };
+		6EE7176E1C8BAFEB005DE182 /* SelectKidTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectKidTableViewController.swift; path = ../SelectKidTableViewController.swift; sourceTree = "<group>"; };
+		6EE717701C8BB0E8005DE182 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		9503867C1C8B708300E74666 /* Bambino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bambino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9503867F1C8B708300E74666 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		950386841C8B708300E74666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		950386871C8B708300E74666 /* Bambino.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bambino.xcdatamodel; sourceTree = "<group>"; };
+		950386891C8B708300E74666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9503868C1C8B708300E74666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9503868E1C8B708300E74666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		950386A51C8B7D3D00E74666 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		950386A71C8B7D5900E74666 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		950386A91C8B7D6B00E74666 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		950C14F51C8B7E06001658FF /* AddBabyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBabyViewController.swift; sourceTree = "<group>"; };
+		950C14F91C8B7F35001658FF /* Vacunas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Vacunas.plist; sourceTree = "<group>"; };
+		950C14FB1C8B985C001658FF /* PesoTalla.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PesoTalla.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		950386791C8B708300E74666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950386731C8B708300E74666 = {
+			isa = PBXGroup;
+			children = (
+				9503867E1C8B708300E74666 /* Bambino */,
+				9503867D1C8B708300E74666 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9503867D1C8B708300E74666 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9503867C1C8B708300E74666 /* Bambino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9503867E1C8B708300E74666 /* Bambino */ = {
+			isa = PBXGroup;
+			children = (
+				950386AB1C8B7DBB00E74666 /* ViewControllers */,
+				9503867F1C8B708300E74666 /* AppDelegate.swift */,
+				950386831C8B708300E74666 /* Main.storyboard */,
+				950386891C8B708300E74666 /* Assets.xcassets */,
+				9503868B1C8B708300E74666 /* LaunchScreen.storyboard */,
+				950C14F91C8B7F35001658FF /* Vacunas.plist */,
+				950C14FB1C8B985C001658FF /* PesoTalla.plist */,
+				9503868E1C8B708300E74666 /* Info.plist */,
+				950386861C8B708300E74666 /* Bambino.xcdatamodeld */,
+			);
+			path = Bambino;
+			sourceTree = "<group>";
+		};
+		950386AB1C8B7DBB00E74666 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				950386A51C8B7D3D00E74666 /* LoginViewController.swift */,
+				950386A71C8B7D5900E74666 /* SignUpViewController.swift */,
+				950C14F51C8B7E06001658FF /* AddBabyViewController.swift */,
+				6EE7175E1C8B9863005DE182 /* AddVacunasViewController.swift */,
+				6EE7176C1C8BAF07005DE182 /* AddPediatricianViewController.swift */,
+				950386A91C8B7D6B00E74666 /* HomeViewController.swift */,
+				6EE7176A1C8B9D0E005DE182 /* SeeTipsTableViewController.swift */,
+				6EE717641C8B9C94005DE182 /* SeeCalendarViewController.swift */,
+				6EE7176E1C8BAFEB005DE182 /* SelectKidTableViewController.swift */,
+				6EE717621C8B9C79005DE182 /* AddEventViewController.swift */,
+				6EE717701C8BB0E8005DE182 /* CreateEventViewController.swift */,
+				6EE717661C8B9CAC005DE182 /* SeeHistoryTableViewController.swift */,
+				6EE717681C8B9CF7005DE182 /* SeePediatricianViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9503867B1C8B708300E74666 /* Bambino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 950386911C8B708300E74666 /* Build configuration list for PBXNativeTarget "Bambino" */;
+			buildPhases = (
+				950386781C8B708300E74666 /* Sources */,
+				950386791C8B708300E74666 /* Frameworks */,
+				9503867A1C8B708300E74666 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bambino;
+			productName = Bambino;
+			productReference = 9503867C1C8B708300E74666 /* Bambino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		950386741C8B708300E74666 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Temporal3.0;
+				TargetAttributes = {
+					9503867B1C8B708300E74666 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 950386771C8B708300E74666 /* Build configuration list for PBXProject "Bambino" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 950386731C8B708300E74666;
+			productRefGroup = 9503867D1C8B708300E74666 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9503867B1C8B708300E74666 /* Bambino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9503867A1C8B708300E74666 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950C14FA1C8B7F35001658FF /* Vacunas.plist in Resources */,
+				9503868D1C8B708300E74666 /* LaunchScreen.storyboard in Resources */,
+				9503868A1C8B708300E74666 /* Assets.xcassets in Resources */,
+				950386851C8B708300E74666 /* Main.storyboard in Resources */,
+				950C14FC1C8B985C001658FF /* PesoTalla.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		950386781C8B708300E74666 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE717651C8B9C94005DE182 /* SeeCalendarViewController.swift in Sources */,
+				6EE7176B1C8B9D0E005DE182 /* SeeTipsTableViewController.swift in Sources */,
+				6EE717711C8BB0E8005DE182 /* CreateEventViewController.swift in Sources */,
+				950386A61C8B7D3D00E74666 /* LoginViewController.swift in Sources */,
+				6EE7176D1C8BAF07005DE182 /* AddPediatricianViewController.swift in Sources */,
+				950386881C8B708300E74666 /* Bambino.xcdatamodeld in Sources */,
+				6EE7175F1C8B9863005DE182 /* AddVacunasViewController.swift in Sources */,
+				950386801C8B708300E74666 /* AppDelegate.swift in Sources */,
+				950386A81C8B7D5900E74666 /* SignUpViewController.swift in Sources */,
+				950C14F61C8B7E06001658FF /* AddBabyViewController.swift in Sources */,
+				6EE7176F1C8BAFEB005DE182 /* SelectKidTableViewController.swift in Sources */,
+				6EE717631C8B9C79005DE182 /* AddEventViewController.swift in Sources */,
+				6EE717671C8B9CAC005DE182 /* SeeHistoryTableViewController.swift in Sources */,
+				950386AA1C8B7D6B00E74666 /* HomeViewController.swift in Sources */,
+				6EE717691C8B9CF7005DE182 /* SeePediatricianViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		950386831C8B708300E74666 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				950386841C8B708300E74666 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9503868B1C8B708300E74666 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9503868C1C8B708300E74666 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9503868F1C8B708300E74666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		950386901C8B708300E74666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		950386921C8B708300E74666 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bambino",
+				);
+				INFOPLIST_FILE = Bambino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bambino.Bambino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		950386931C8B708300E74666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Bambino",
+				);
+				INFOPLIST_FILE = Bambino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bambino.Bambino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		950386771C8B708300E74666 /* Build configuration list for PBXProject "Bambino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9503868F1C8B708300E74666 /* Debug */,
+				950386901C8B708300E74666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		950386911C8B708300E74666 /* Build configuration list for PBXNativeTarget "Bambino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950386921C8B708300E74666 /* Debug */,
+				950386931C8B708300E74666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		950386861C8B708300E74666 /* Bambino.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				950386871C8B708300E74666 /* Bambino.xcdatamodel */,
+			);
+			currentVersion = 950386871C8B708300E74666 /* Bambino.xcdatamodel */;
+			path = Bambino.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 950386741C8B708300E74666 /* Project object */;
+}

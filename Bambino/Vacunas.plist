@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Fecha</key>
+		<integer>0</integer>
+		<key>Vacuna</key>
+		<string>BCG</string>
+		<key>Enfermedad</key>
+		<string>Tuberculosis</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>0</integer>
+		<key>Vacuna</key>
+		<string>Hepatitis B</string>
+		<key>Enfermedad</key>
+		<string>Hepatitis B</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>2</integer>
+		<key>Vacuna</key>
+		<string>Hepatitis B</string>
+		<key>Enfermedad</key>
+		<string>Hepatitis B</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>2</integer>
+		<key>Vacuna</key>
+		<string>Pentavalente Aceluar DPaT + VPI + Hib</string>
+		<key>Enfermedad</key>
+		<string>Difteria, Tos Ferina, Tétanos, Poliomielitis e infecciones porH. influenzae b</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>2</integer>
+		<key>Vacuna</key>
+		<string>Rotavirus</string>
+		<key>Enfermedad</key>
+		<string>Diarrea por Rotavirus</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>2</integer>
+		<key>Vacuna</key>
+		<string>Neumocócica conjugada</string>
+		<key>Enfermedad</key>
+		<string>Infecciones por Neumococo</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>4</integer>
+		<key>Vacuna</key>
+		<string>Pentavalente Aceluar DPaT + VPI + Hib</string>
+		<key>Enfermedad</key>
+		<string>Difteria, Tos Ferina, Tétanos, Poliomielitis e infecciones porH. influenzae b</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>4</integer>
+		<key>Vacuna</key>
+		<string>Rotavirus</string>
+		<key>Enfermedad</key>
+		<string>Diarrea por Rotavirus</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>4</integer>
+		<key>Vacuna</key>
+		<string>Neumocócica conjugada</string>
+		<key>Enfermedad</key>
+		<string>Infecciones por Neumococo</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>6</integer>
+		<key>Vacuna</key>
+		<string>Hepatitis B</string>
+		<key>Enfermedad</key>
+		<string>Hepatitis B</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>6</integer>
+		<key>Vacuna</key>
+		<string>Pentavalente Aceluar DPaT + VPI + Hib</string>
+		<key>Enfermedad</key>
+		<string>Difteria, Tos Ferina, Tétanos, Poliomielitis e infecciones porH. influenzae b</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>6</integer>
+		<key>Vacuna</key>
+		<string>Rotavirus</string>
+		<key>Enfermedad</key>
+		<string>Diarrea por Rotavirus</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>6</integer>
+		<key>Vacuna</key>
+		<string>Influenza</string>
+		<key>Enfermedad</key>
+		<string>Influenza</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>7</integer>
+		<key>Vacuna</key>
+		<string>Influenza</string>
+		<key>Enfermedad</key>
+		<string>Influenza</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>12</integer>
+		<key>Vacuna</key>
+		<string>Neumocócica conjugada</string>
+		<key>Enfermedad</key>
+		<string>Infecciones por Neumococo</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>12</integer>
+		<key>Vacuna</key>
+		<string>SRP</string>
+		<key>Enfermedad</key>
+		<string>Sarampión, Rubéola, Parotiditis </string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>18</integer>
+		<key>Vacuna</key>
+		<string>Pentavalente Aceluar DPaT + VPI + Hib</string>
+		<key>Enfermedad</key>
+		<string>Difteria, Tos Ferina, Tétanos, Poliomielitis e infecciones porH. influenzae b</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>48</integer>
+		<key>Vacuna</key>
+		<string>DPT</string>
+		<key>Enfermedad</key>
+		<string>Difteria, Tos Ferina, Tétanos</string>
+	</dict>
+	<dict>
+		<key>Fecha</key>
+		<integer>72</integer>
+		<key>Vacuna</key>
+		<string>SRP</string>
+		<key>Enfermedad</key>
+		<string>Sarampión, Rubéola, Parotiditis </string>
+	</dict>
+</array>
+</plist>
