@@ -37,6 +37,13 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if tfNombre.text == "" || tfContra.text != tfConfContra.text || tfemail.text == "" {
+            return false
+        }
+        
+        return true
+    }
 
     
     // MARK: - Navigation

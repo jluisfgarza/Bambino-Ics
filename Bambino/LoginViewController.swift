@@ -29,6 +29,13 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if (tfCorreo.text == "" || tfContra == "") && identifier == "login" {
+            return false
+        }
+        
+        return true
+    }
 
     
     // MARK: - Navigation

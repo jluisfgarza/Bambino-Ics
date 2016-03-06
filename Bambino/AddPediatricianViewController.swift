@@ -28,6 +28,14 @@ class AddPediatricianViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if tfPediatra.text == "" || tfPediatra_tel.text == "" || tfPediatra_cel.text == "" || tfPediatra_direc.text == "" {
+            return false
+        }
+        
+        return true
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

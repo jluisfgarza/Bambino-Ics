@@ -38,6 +38,14 @@ class AddBabyViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if tfNombre.text == "" || tfPeso.text == "" || tfTalla.text == "" {
+            return false
+        }
+        
+        return true
+    }
 
 
     
