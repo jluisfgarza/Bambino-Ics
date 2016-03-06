@@ -281,7 +281,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="XU3-mh-HAa" style="IBUITableViewCellStyleDefault" id="mZH-O7-Xty">
-                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZH-O7-Xty" id="84X-JR-qWT">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
@@ -740,7 +740,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="Ywd-Cy-fiW"/>
         <segue reference="9Nk-6a-Zym"/>
-        <segue reference="avX-ur-ps7"/>
+        <segue reference="JLF-P8-qB3"/>
         <segue reference="aBL-Q2-GMB"/>
     </inferredMetricsTieBreakers>
 </document>

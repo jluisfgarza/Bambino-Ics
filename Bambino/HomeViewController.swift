@@ -11,11 +11,13 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         
+        let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
+        proxyViewForStatusBar.backgroundColor = UIColor(red: 0.48627450980392156, green: 0.070588235294117646, blue: 0.46274509803921571, alpha: 1)
+        self.view.addSubview(proxyViewForStatusBar)
+        
          UINavigationBar.appearance().barTintColor = UIColor(red: 101.0/255.0, green: 99.0/255.0, blue: 164.0/255.0, alpha: 1.0)
         UIToolbar.appearance().barTintColor = UIColor(red: 101.0/255.0, green: 99.0/255.0, blue: 164.0/255.0, alpha: 1.0)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
@@ -27,7 +29,7 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
     /*
     // MARK: - Navigation
