@@ -19,6 +19,7 @@ class Bebe: NSObject {
     var strUbicacion: String
     var arrConsulta: [Consulta]
     var arrVacunas: [Vacuna]
+    var arrEnfermedad: [HEnfermedad]
     var arrEventoProximo: [EventoProximo]
     var pesoTalla: PesoTalla
     var strSexo: String
@@ -35,6 +36,7 @@ class Bebe: NSObject {
         self.arrConsulta = []
         self.arrVacunas = []
         self.arrEventoProximo = []
+        self.arrEnfermedad = []
         self.pesoTalla = PesoTalla()
         self.strSexo = "Niño"
         
@@ -64,6 +66,7 @@ class Bebe: NSObject {
         self.arrConsulta = []
         self.arrVacunas = []
         self.arrEventoProximo = []
+        self.arrEnfermedad = []
         self.pesoTalla = PesoTalla()
         
         let path = NSBundle.mainBundle().pathForResource("Vacunas", ofType: "plist")

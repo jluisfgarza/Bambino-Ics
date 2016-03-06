@@ -86,7 +86,10 @@ class SeeHistoryTableViewController: UITableViewController {
             view.index = self.index
             
         }
-        else if segue.identifier == "segueHistorialEnfermedades" {
+        else if segue.identifier == "segueHistorialEnf" {
+            let view = segue.destinationViewController as! HistorySelectEnferTableViewController
+            view.appData = self.appData
+            view.index = self.index
             
         }
         else if segue.identifier == "segueHistorialCitas" {
