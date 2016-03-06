@@ -332,7 +332,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Niño o Niña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nuR-Xa-ecx">
                                         <rect key="frame" x="8" y="8" width="324" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
@@ -1536,9 +1536,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kh4-0O-QbW"/>
-        <segue reference="tLk-JC-t2y"/>
-        <segue reference="aBL-Q2-GMB"/>
+        <segue reference="Ywd-Cy-fiW"/>
         <segue reference="JLF-P8-qB3"/>
+        <segue reference="aBL-Q2-GMB"/>
         <segue reference="ZKp-Pn-AIW"/>
     </inferredMetricsTieBreakers>
 </document>
