@@ -20,6 +20,9 @@ class HistoryEnfViewController: UIViewController {
     @IBOutlet weak var tfMedicamentos: UITextField!
     @IBOutlet weak var tfComentarios: UITextField!
     @IBOutlet weak var btGuardar: UIButton!
+    @IBAction func tapGesture(sender: AnyObject) {
+        self.view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
