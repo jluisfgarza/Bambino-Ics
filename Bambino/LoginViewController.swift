@@ -28,9 +28,17 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func quitarteclado(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
+    }
+
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if (tfCorreo.text == "" || tfContra == "") && identifier == "login" {
+            return false
+        }
+        
+        return true
     }
 
     

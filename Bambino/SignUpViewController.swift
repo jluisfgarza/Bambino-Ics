@@ -40,6 +40,14 @@ class SignUpViewController: UIViewController {
     @IBAction func quitarteclado(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
     }
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        if tfNombre.text == "" || tfContra.text != tfConfContra.text || tfemail.text == "" {
+            return false
+        }
+        
+        return true
+    }
+
     
     // MARK: - Navigation
 

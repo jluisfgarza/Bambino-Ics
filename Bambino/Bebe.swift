@@ -41,7 +41,7 @@ class Bebe: NSObject {
         
         for dict in nsarrayVacunas! {
             let vacuna = Vacuna()
-            //vacuna.fecha = (dict.objectForKey("fecha")?.integerValue)!
+            vacuna.fecha = (dict.objectForKey("Fecha")?.integerValue)!
             vacuna.strVacuna = String(dict.objectForKey("Vacuna"))
             vacuna.strEnfermedad = String(dict.objectForKey("Enfermedad"))
             
@@ -68,7 +68,7 @@ class Bebe: NSObject {
         
         for dict in nsarrayVacunas! {
             let vacuna = Vacuna()
-            vacuna.fecha = (dict.objectForKey("fecha")?.integerValue)!
+            vacuna.fecha = (dict.objectForKey("Fecha")?.integerValue)!
             vacuna.strVacuna = String(dict.objectForKey("Vacuna"))
             vacuna.strEnfermedad = String(dict.objectForKey("Enfermedad"))
             
