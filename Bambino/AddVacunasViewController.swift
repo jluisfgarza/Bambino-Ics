@@ -69,5 +69,6 @@ class AddVacunasViewController: UIViewController, UITableViewDataSource, UITable
         
         let view = segue.destinationViewController as! AddPediatricianViewController
         view.appData = self.appData
+        view.index = 0
     }
 }

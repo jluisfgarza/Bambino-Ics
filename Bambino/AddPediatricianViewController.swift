@@ -16,11 +16,15 @@ class AddPediatricianViewController: UIViewController {
     @IBOutlet weak var tfPediatra_direc: UITextField!
     
     var appData: ApplicationData!
+    var index: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        self.tfPediatra.text = appData.mama.bebBabies[index].strNombrePediatra
+        self.tfPediatra_tel.text = appData.mama.bebBabies[index].strTelefono
+        self.tfPediatra_cel.text = appData.mama.bebBabies[index].strCelular
+        self.tfPediatra_direc.text = appData.mama.bebBabies[index].strUbicacion
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,8 +43,6 @@ class AddPediatricianViewController: UIViewController {
         
         return true
     }
-
-    
     
     // MARK: - Navigation
 
@@ -48,11 +50,10 @@ class AddPediatricianViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let count = appData.mama.bebBabies.count - 1
-        self.appData.mama.bebBabies[count].strNombrePediatra = tfPediatra.text!
-        self.appData.mama.bebBabies[count].strTelefono = tfPediatra_tel.text!
-        self.appData.mama.bebBabies[count].strCelular = tfPediatra_cel.text!
-        self.appData.mama.bebBabies[count].strUbicacion = tfPediatra_cel.text!
+        self.appData.mama.bebBabies[index].strNombrePediatra = tfPediatra.text!
+        self.appData.mama.bebBabies[index].strTelefono = tfPediatra_tel.text!
+        self.appData.mama.bebBabies[index].strCelular = tfPediatra_cel.text!
+        self.appData.mama.bebBabies[index].strUbicacion = tfPediatra_direc.text!
         
         let nav = segue.destinationViewController as! UINavigationController
         let home = nav.topViewController as! HomeViewController

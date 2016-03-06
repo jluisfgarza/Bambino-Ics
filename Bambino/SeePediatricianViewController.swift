@@ -21,8 +21,11 @@ class SeePediatricianViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+        self.tfNombre.text = appData.mama.bebBabies[index].strNombrePediatra
+        self.tfTelefono.text = appData.mama.bebBabies[index].strTelefono
+        self.tfCelular.text = appData.mama.bebBabies[index].strCelular
+        self.tfUbicacion.text = appData.mama.bebBabies[index].strUbicacion
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,14 +37,15 @@ class SeePediatricianViewController: UIViewController {
         self.view.endEditing(true)
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let view = segue.destinationViewController as! AddPediatricianViewController
+        view.appData = self.appData
+        view.index = self.index
     }
-    */
-
 }
