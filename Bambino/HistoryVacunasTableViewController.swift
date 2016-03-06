@@ -1,21 +1,28 @@
 //
-//  SeeHistoryTableViewController.swift
+//  HistoryVacunasTableViewController.swift
 //  Bambino
 //
-//  Created by Pablo Diaz on 05/03/16.
+//  Created by Alex De la Rosa on 06/03/16.
 //  Copyright © 2016 Temporal3.0. All rights reserved.
 //
 
 import UIKit
 
-class SeeHistoryTableViewController: UITableViewController {
+class HistoryVacunasTableViewController: UITableViewController {
     
     var appData: ApplicationData!
     var index: Int!
+    var arrVacunas: [Vacuna]!
+    var iCont = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        for vacuna in appData.mama.bebBabies[index].arrVacunas {
+            if vacuna.boolStatus {
+                iCont++
+                arrVacunas.append(vacuna)
+            }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -28,15 +35,26 @@ class SeeHistoryTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
+    // MARK: - Table view data source
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        
+        return iCont
+    }
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
         // Configure the cell...
+        //cell.textLabel!.text = arrVacunas[indexPath.row]
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -73,26 +91,14 @@ class SeeHistoryTableViewController: UITableViewController {
     }
     */
 
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "segueHistorialVacunas" {
-            let view = segue.destinationViewController as! HistoryVacunasTableViewController
-            view.appData = self.appData
-            view.index = self.index
-            
-        }
-        else if segue.identifier == "segueHistorialEnfermedades" {
-            
-        }
-        else if segue.identifier == "segueHistorialCitas" {
-            
-        }
-        else if segue.identifier == "segueHistorialTablapt" {
-            
-        }
     }
+    */
+
 }
