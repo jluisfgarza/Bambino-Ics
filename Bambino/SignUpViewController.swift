@@ -11,10 +11,11 @@ import UIKit
 class SignUpViewController: UIViewController {
     
     @IBOutlet weak var tfNombre: UITextField!
-    @IBOutlet weak var tfEdad: UITextField!
     @IBOutlet weak var tfContra: UITextField!
     @IBOutlet weak var tfConfContra: UITextField!
+    @IBOutlet weak var tfemail: UITextField!
     
+    @IBOutlet weak var dpnacimiento: UIDatePicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
