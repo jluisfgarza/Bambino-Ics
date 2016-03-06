@@ -60,7 +60,7 @@ class SignUpViewController: UIViewController {
         appData.mama.strPassword = self.tfContra.text!
         appData.mama.strCorreo = self.tfemail.text!
         appData.mama.FechaNacimiento = self.dpnacimiento.date
-        
+        appData.mama.bebBabies.removeAll()
         let view = segue.destinationViewController as! AddBabyViewController
         view.appData = appData
         

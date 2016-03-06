@@ -49,7 +49,7 @@ class SelectKidTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! KidsTableViewCell
 
         cell.lbNombre.text = self.appData.mama.bebBabies[indexPath.row].strNombre
-        let months = NSDate.monthsFrom(self.appData.mama.bebBabies[indexPath.row].fechaNacimiento)
+        let months = NSCalendar.currentCalendar().components(.Month, fromDate: self.appData.mama.bebBabies[indexPath.row].fechaNacimiento, toDate: NSDate(), options: []).month
         cell.lbEdad.text = String(months)
         cell.lbPediatra.text = self.appData.mama.bebBabies[indexPath.row].strNombrePediatra
 
