@@ -745,7 +745,7 @@
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Title" id="FIq-wf-qX5">
+                    <navigationItem key="navigationItem" title="Menú" id="FIq-wf-qX5">
                         <barButtonItem key="rightBarButtonItem" title="Bebé +" id="hhz-2a-aDY">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
@@ -951,6 +951,6 @@
         <segue reference="Ywd-Cy-fiW"/>
         <segue reference="9Nk-6a-Zym"/>
         <segue reference="JLF-P8-qB3"/>
-        <segue reference="aBL-Q2-GMB"/>
+        <segue reference="DTT-n6-4qc"/>
     </inferredMetricsTieBreakers>
 </document>

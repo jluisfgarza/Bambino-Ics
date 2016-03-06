@@ -23,7 +23,13 @@ class AddBabyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.toolbarHidden = true
+        self.navigationController?.toolbarHidden = true;
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Menú", style: UIBarButtonItemStyle.Bordered, target: self, action: "back:")
+        self.navigationItem.leftBarButtonItem = newBackButton;
+        
+        
+        
 
         let proxyViewForStatusBar : UIView = UIView(frame: CGRectMake(0, 0,self.view.frame.size.width, 20))
         proxyViewForStatusBar.backgroundColor = UIColor(red: 80.0/255.0, green: 210.0/255.0, blue: 194.0/255.0, alpha: 0.0)
@@ -34,6 +40,14 @@ class AddBabyViewController: UIViewController {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
 
         // Do any additional setup after loading the view.
+    }
+    
+    func back(sender: UIBarButtonItem) {
+        // Perform your custom actions
+        // ...
+        // Go back to the previous ViewController
+        self.navigationController?.popViewControllerAnimated(true)
+            self.navigationController?.toolbarHidden = false
     }
 
     override func didReceiveMemoryWarning() {
