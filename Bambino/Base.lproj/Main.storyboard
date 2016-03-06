@@ -116,9 +116,9 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2H-mM-kx7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-iB-L7q">
-                                        <rect key="frame" x="122" y="49" width="130" height="130"/>
-                                        <state key="normal" title="+" backgroundImage="avatar-circle"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCn-iB-L7q">
+                                        <rect key="frame" x="122" y="74" width="131" height="128"/>
+                                        <state key="normal" title="+" image="Image-1" backgroundImage="avatar-circle"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.18093842196195131" blue="0.94815607850499561" alpha="0.39148706896551722" colorSpace="calibratedRGB"/>
@@ -326,10 +326,6 @@
                                     <segue destination="aqh-qk-ZGE" kind="show" identifier="addvacunas" id="8SR-k1-hzx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwx-uK-ciF">
-                                <rect key="frame" x="122" y="79" width="130" height="130"/>
-                                <state key="normal" title="+" backgroundImage="avatar-circle"/>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gj4-hS-4EQ">
                                 <rect key="frame" x="20" y="564" width="335" height="45"/>
                                 <subviews>
@@ -364,6 +360,13 @@
                                 <color key="textColor" red="0.32156862749999998" green="0.30588235289999999" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwx-uK-ciF">
+                                <rect key="frame" x="122" y="79" width="130" height="130"/>
+                                <state key="normal" title="+" backgroundImage="avatar-circle"/>
+                                <connections>
+                                    <action selector="tomafotobebe" destination="dqh-2x-8Zw" eventType="touchUpInside" id="AN6-hw-8Lu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
