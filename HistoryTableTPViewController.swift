@@ -25,6 +25,9 @@ class HistoryTableTPViewController: UIViewController {
     @IBOutlet weak var lbNormalEst: UILabel!
     @IBOutlet weak var lbEstadoTalla: UILabel!
     
+    @IBAction func btCalcular(sender: AnyObject) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
