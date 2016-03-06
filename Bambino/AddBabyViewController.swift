@@ -16,6 +16,9 @@ class AddBabyViewController: UIViewController {
     @IBOutlet weak var tfPeso: UITextField!
     @IBOutlet weak var tfTalla: UITextField!
     @IBOutlet weak var tfSexo: UITextField!
+    @IBAction func tomafotobebe() {
+        
+    }
     
     var appData: ApplicationData!
     
